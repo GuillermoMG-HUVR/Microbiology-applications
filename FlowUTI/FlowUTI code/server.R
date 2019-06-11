@@ -5,11 +5,11 @@ shinyServer(function(input, output) {
   output$checkbox<-renderUI({
     if (is.null(input$file)) {
     #checkboxInput("checkbox", label = "Demo data", value = FALSE,width ="90%")
-      #checkboxGroupInput("checkbox", label = "Demos data",
+      #checkboxGroupInput("checkbox", label = "Demo data",
                          #choices = c("Ederly","Neonates"),choiceValues = NULL,
                                      #width ="90%")
       #checkboxInput("checkbox", label = "Demo data", value = FALSE,width ="90%")
-      selectInput("checkbox", label = "Demos data",
+      selectInput("checkbox", label = "Demo data",
       choices = c("Ederly","Neonates","None"),selected = "None",
       multiple = FALSE,width ="90%")
       

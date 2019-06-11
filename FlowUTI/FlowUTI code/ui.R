@@ -46,7 +46,7 @@ br(),br(),
 #Numero de registros que se mostraran
 numericInput("ntabla","Nº of records to show",10),
 br(),br(),
-#demos
+#demo
 h4(strong(div(uiOutput("checkbox"),style = "color:blue")))
 
 ),
