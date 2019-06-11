@@ -1,170 +1,147 @@
-####### Web Building ##############################################
-#_______ tabpanel web _____________________________________________________
 
-shinyUI(navbarPage("FlowUTI app",theme=shinytheme("sandstone"), 
-                   tabPanel(" Use your data ", titlePanel(h4("First step: uploading your data")),
-                            
- # Input side panel:
+
+shinyUI(navbarPage(h3("FlowUTI"),theme=shinytheme("sandstone"),
+####### INSTRUCTIONS ##############################################
+                   tabPanel(h5("Instructions") ,
+                            column(11,br(),br(),
+                                   h4(strong(helpText("FlowUTI Application"))),
+                                   
+                                   p(div("FlowUTI is an interactive web application drawn up for both validation and exploratory testing of data obtained from flow cytometry analyzers used in urinary tract infection screening.
+                                            This easy-to-use application will allow clinical microbiologist to optimize the use of urine flow cytometry, improving decision-making and management of laboratory resources.
+                                            This app is divided in three sections:",align="justify")),
+                                   p("1-	Upload data: Browse, upload and data visualization."),
+                                   p("2-	Diagnostic accuracy: calculation of diagnostic parameters and density graph display for culture results."),
+                                   p(div("3-	Table of sensitivity and specificity: sensitivity and specificity for different cut-points, calculated by using bootstrapping (n=1000). Sensitivity and specificity graph, and overall accuracy expressed as area under the ROC curve (AUC).",align="justify")),
+                                  
+                                   
+                                   br(),br(),
+                                   
+                                   strong(helpText("Recommendations:",style="strong")),
+                                   p(" The database should be composed at least by two columns, one for the culture result (gold standard), and other for the independent variable of interest (e.g. bacteria or leukocyte counts)."),
+                                   p(" The input dataset must be in comma-separated values (CSV) file format without row names."),
+                                   p(" It is important to bear in mind that before conducting a screening study is crucial to determine a sufficient sample size (1,2)."),
+                                   
+                                   br(),
+                                   
+                                   strong(helpText ("Bibliography:",style="strong")),
+                                   p("1.-Buderer NM. Statistical methodology: I. Incorporating the prevalence of disease into the sample size calculation for sensitivity and specificity. Acad Emerg Med. 1996;3:895-900."),
+                                   p("2.-Bujang MA, Adnan TH. Requirements for minimum sample size for sensitivity and specificity snalysis. J Clin Diagn Res. 2016;10:YE01-YE06.")
+                                   )
+                                   ),                                      
+                   
+######### DATA DISPLAY #############################################
+
+tabPanel(h5(" Upload data "),
                             
 sidebarPanel(
-  tags$style(type='text/css', ".well { max-width: 20em; }"),
-  
-    # Choose type of file:
-                              
-    selectInput("readFunction", "Choose type of file",
-              c("read.csv",
-                "read.spss",
-                "read.dta"
-                )),
-                              
-    fileInput("file", "Your input file:")
-                 ),
+ 
                             
-                            
-########## Display data main panel (using DT) #############                          
+fileInput("file", "Select file in CSV format to upload",
+          multiple = FALSE,
+          accept = c(".csv")),
+
+# Selector de argumento CSV:
+uiOutput("ArgSelect"),
+
+# Argument field CSV:
+uiOutput("ArgText"),
+br(),br(),
+#Numero de registros que se mostraran
+numericInput("ntabla","Nº of records to show",10),
+br(),br(),
+#demos
+h4(strong(div(uiOutput("checkbox"),style = "color:blue")))
+
+),
+                          
     mainPanel(
               h3(textOutput("texta")),
               h4(textOutput("texta1")),
               h4(textOutput("texta2")),
-              DT::dataTableOutput('ex1')
+             
+              tableOutput("ex1")
+             
               )
               ),
 
+######### DIAGNOSTIC VALIDATION ###############################################################
 
-        ##################################################################################################
-######### DESCRIPTIVE STATISTICS                   
-        ##################################################################################################      
-        tabPanel("Descriptive statistics ", titlePanel(h4("Simple summaries about the sample and the measures, together with simple graphics analysis")),
-                 fluidPage( 
-                   fluidRow( 
-                     column(3,uiOutput("vars2"),
-                            
-                            div(textOutput("text4"),style = "color:blue"), 
-                            div(textOutput("text5"),style = "color:blue"),
-                            br(),br(),
-                            
-                            uiOutput("clase"),
-                            br(),
-                            uiOutput("his"),
-                            br(),
-                            uiOutput("normal1")
-                     ),
-                     
-                     column(3, 
-                            h4("Variable "),
-                            h4(textOutput("text1")),
-                            textOutput("text2"),
-                            tableOutput("tabla1"),
-                            
-                            conditionalPanel(condition = "class(variableInput())=='factor'",
-                                             tableOutput("tabla2")),
-                            strong(em((textOutput("text3"))))),
-                     
-                     
-                     column(4,  
-                            plotOutput("grafico"),height = "300px"))),
-                 
-                 
-                 fluidRow(
-                   column(3,strong(em(textOutput("normalidad2")))),
-                   column(3,uiOutput("slider1")),
-                   column(4,plotOutput("graficob"),height = "300px")
-                 )
-        ),
-        
-
-########################## VALIDATING DIAGNOSTIC TEST ###############################################################
-tabPanel("Screening test",
-        br(),
-#____________ Side panel and inputs ________________________  
-
-           column(3,
-                  wellPanel(
-                  
+tabPanel(h5("Diagnostic accuracy"),
+         br(),
+         
+         column(3,
+                wellPanel(
                   uiOutput("vdecorte"),
                   br(), br(),
                   uiOutput("gold"),
                   br(), br(),
-           #),
-                  #wellPanel(
-           numericInput("smin","Minimum value - slider",0),
-           numericInput("smax","Maximum value - slider",100),
-           numericInput("step","step",1))),
-
-#__________________  (tableOutput) ______________ 
-
-           column(4,
-                  fluidRow(
-                  p(h4(strong("Choose your cut-off point"))),
-                  uiOutput("corte")),
+                  
+                  numericInput("smin"," Slider minimum value ",0),
+                  numericInput("smax"," Slider maximum value",1000),
+                  numericInput("step"," Slider interval",1)),
+                
+                fluidRow({column(3,offset = 2,
+                                 downloadButton("Report", "Report"))})
+         ),
          
-                  fluidRow(
-                  p(h4(strong("Statistics obtained according to the selected cut-off point"))),
+         #__________________ Slider-bar and tables (tableOutput) ______________ 
+         
+         column(4,
+                fluidRow(
+                  p(h4(strong("Select threshold"))),
+                  uiOutput("corte")),
+                
+                fluidRow(
+                  p(h4(strong("Diagnostic accurary "))),
                   strong(textOutput("Textocorte1")),
                   tableOutput("resulcorte"))),
+         
+         #_________________ Density graph (plotOutput) ______________________________________________
+         
+         column(5,
+                fluidRow(
+                  plotOutput("curvas",height = "200px",width="400px",
+                             
+                             brush = brushOpts(
+                               id = "curvas_brush",
+                               resetOnNew = TRUE)),
+                  br(),
+                  plotOutput("plot3", height = "400px",width="590px"),
+                  br())),
+         column(4,offset=8,
+                fluidRow(
+                  p(h6(div(textOutput("expgraf"),align="left")))
+                  
+                ))),
 
-#_________________ (plotOutput) ______________________________________________
-
-           column(5,
-                  br(),br(),br(),br(),
-                  br(),br(),br(),br(),
-                  fluidRow(
-                  plotOutput("curvas"),height = "600px")
-                 
-           )),
-
-############################## tables ######################################################
-tabPanel("Diagnostic utility of Flow Cytometry",
+############################## TABLES ######################################################
+tabPanel(h5("Tables of sensitivity and specificity"),
          br(),
-#___________________ Variable side panel _____________________________
+       
          column(3,
                 wellPanel(
-
-
-uiOutput("vdetabla"),
-br(),br(),
-uiOutput("gold2"),
-br(),br(),
-selectInput("boot","n boot",c(2,100,500,1000,2000,10000),2)
-)),
-#__________________  (tableOutput) _____________________________________________
-                  column(4,        
-         h4(textOutput("cabecera")),
-         strong(textOutput("subcabecera")),
-         br(),br(),
-         DT::dataTableOutput("tabla")
-),
-    
-
-#________Graphic - table (plotOutput) ________________________________________________
-column(5,
-       plotOutput("sensi"),height = "300px",
-       plotOutput("roc"),height = "300px")
-),
-
-###########################################################################################
-tabPanel("Instructions" ,
-         column(11,br(),br(),
-                
-                helpText("Esta aplicación puede ser utilizada como herramienta para la validación de pruebas diagnosticas.
-                         La App consta de cuatro secciones:"),
-                helpText("1-	Búsqueda descarga y visualización de la base de datos."),
-                helpText("2-	 Análisis estadístico descriptivo."),
-                helpText("3-	 Calculo de sensibilidad, especificad, valores predictivos, exactitud, odds ratio diagnóstica, índice de Youden y razones de verosimilitud. Gráfico de densidad interactivo para distintos puntos de corte de la variable de estudio."),
-                helpText("4-	Tabla de sensibilidad y especificidad para distintos puntos de corte, calculadas mediante boostrapping. Gráfico de sensibilidad y especificidad. Curva ROC con el área bajo curva calculada."),
-                helpText("Para los cálculos principales, la App utiliza los paquetes", strong("epiR")," de Mark Stevenson y cols. (sección 3) y",strong( "pROC ")," de Xavier Robin et al. para la sección 4."),
-                
+                  uiOutput("vdetabla"),
+                  br(),br(),
+                  uiOutput("gold2"),
+                  br(),br(),
+                  numericInput("lsup"," Marker maximum value",1000),
+                  br(),br()),
+                br()
+               
+         ),
+         #__________________SPACE FOR TABLE (tableOutput) _____________________________________________
+         column(4,        
+                h4(textOutput("cabecera")),
+                strong(textOutput("subcabecera")),
                 br(),br(),
-                
-                strong(helpText("Recomendaciones de uso:",style="strong")),
-                helpText(" La base de datos contendrá, al menos, el gold estándar y una variable de estudio. El formato de la base de datos puede ser csv, spss o stata."),
-                helpText("Gold estándar: debe ser una variable tipo factor dicotómica."),
-                helpText("La(s) variable(s) de estudio que constituyen los resultados de la prueba a evaluar deben ser del tipo “numeric” o “integer” "),
-                helpText("En la sección 4, los cálculos se realizan mediante un re muestreo no paramétrico estratificado. 
-                         El número de repeticiones para el cálculo, se controla por la ventana n.boot. Al objeto de obtener una respuesta rápida, su valor por defecto es 2, pero evidentemente se necesita un numero de repeticiones mucho más alto para obtener una estimación precisa de los estadísticos y sus intervalos de confianza. Los autores recomiendan un n.boot  mínimo de  2000.
-                         Es necesario tener en cuenta que valores altos de n.boot consumen un tiempo considerable.")
-                      )
-                )
+                tableOutput("tabla")
+         ),
          
-                ))
-
+         
+         #________SPACE FOR GRAPHS WITH TABLES (plotOutput) ________________________________________________
+         column(5,
+                plotOutput("sensi", height = "300px",width = "75%"),
+                plotOutput("roc", height = "300px",width = "75%"))
+)
+###########################################################################################
+))
