@@ -5,9 +5,14 @@ shinyServer(function(input, output) {
   output$checkbox<-renderUI({
     if (is.null(input$file)) {
     #checkboxInput("checkbox", label = "Demo data", value = FALSE,width ="90%")
-      checkboxGroupInput("checkbox", label = "Demos data",
-                         choices = c("Ederly","Neonates"),choiceValues = NULL,
-                                     width ="90%")
+      #checkboxGroupInput("checkbox", label = "Demos data",
+                         #choices = c("Ederly","Neonates"),choiceValues = NULL,
+                                     #width ="90%")
+      #checkboxInput("checkbox", label = "Demo data", value = FALSE,width ="90%")
+      selectInput("checkbox", label = "Demos data",
+      choices = c("Ederly","Neonates","None"),selected = "None",
+      multiple = FALSE,width ="90%")
+      
     }
     })
   ### Argument names:
@@ -18,24 +23,9 @@ shinyServer(function(input, output) {
     return(Names)
   })
   
-  # ArgumentCSV selector:
-  
-  output$ArgSelect <- renderUI({
-    if (length(ArgNames())==0) return(NULL)
-    selectInput("arg","Argument CSV Type:",choices = c("sep"))#,"quote"),"sep")
-  })
-  
+
   output$ArgText <- renderUI({
-    #fun__arg <- paste0("read.csv__",input$arg)
-    #if (is.null(input$arg)) return(NULL)
-    #Defaults <- formals(read.csv)
-    #if (is.null(input[[fun__arg]]))
-    #{
-      #textInput(fun__arg, label = "Value:", value = deparse(Defaults[[input$arg]]))
-    #} else {
-     # textInput(fun__arg, label = "Value:", value = input[[fun__arg]]) 
-    #}
-    selectInput("sep","Sep type:",choices = c("Comma","Semicolon"))
+    selectInput("sep","Arg Sep type:",choices = c("Comma","Semicolon"))
   })
   
   Dataset <- reactive({
@@ -66,20 +56,7 @@ shinyServer(function(input, output) {
                    quote = '"')}
       }
       
-     # args <- grep(paste0("^","read.csv__"), names(input), value = TRUE)
-      #argList <- list()
-      #for (i in seq_along(args))
-      #{
-       # argList[[i]] <- eval(parse(text=input[[args[i]]]))
-      #}
-      
-      #names(argList) <- gsub(paste0("^",input$readFunction,"__"),"",args)
-      #argList <- argList[names(argList) %in% ArgNames()]
-      #Dataset <- as.data.frame(do.call(read.csv,c(list(input$file$datapath),argList)))
-     # return(Dataset)
-      
-   
-  
+     
     }
   })
   
@@ -90,7 +67,7 @@ shinyServer(function(input, output) {
   
   output$texta<-renderText({
     if (is.null(input$file)) {
-      if(is.null(input$checkbox)){
+      if(input$checkbox=="None"){
       paste("Select file in CSV format" )
         }
       else{
@@ -111,7 +88,7 @@ shinyServer(function(input, output) {
   output$texta1<-renderText({
     nombrebd1<-length(Dataset())
     if (is.null(input$file)) {
-      if(is.null(input$checkbox)){
+      if(input$checkbox=="None"){
         paste("" )
       }
       else{paste("3 variables" )

@@ -40,9 +40,6 @@ fileInput("file", "Select file in CSV format to upload",
           multiple = FALSE,
           accept = c(".csv")),
 
-# Selector de argumento CSV:
-uiOutput("ArgSelect"),
-
 # Argument field CSV:
 uiOutput("ArgText"),
 br(),br(),
