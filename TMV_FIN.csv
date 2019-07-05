@@ -1,0 +1,177 @@
+"ID","Sexo","Edad","AP_RTU_evento1","Estadio","Cis_evento1","Tamaño_evento1","Nº.lesiones_1","Lesiones8","MMC_precoz1","TTO_1","TTO_2","tiempo","RECIDIVA","PROGRESA_T2","AG2"
+"1",72,"Hombre",70,"pTaBG","0a","No CIS","< 3 cm",1,"NO","No precoz","QHT","QHT",400,0,0,0
+"2",62,"Hombre",76,"pT1BG","I","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",904,0,0,0
+"3",127,"Mujer",55,"pT1BG","I","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",1034,0,0,0
+"4",76,"Mujer",60,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",655,1,0,0
+"5",154,"Mujer",59,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",203,1,0,0
+"6",104,"Hombre",41,"pTaBG","0a","No CIS","< 3 cm",5,"NO","Sí precoz","EMDA+MMCP","EMDA",334,0,0,0
+"7",83,"Hombre",84,"pTaBG","0a","No CIS","< 3 cm",2,"NO","Sí precoz","MMCP","MMCP",1066,0,0,0
+"8",158,"Mujer",81,"pT1AG","I","No CIS","< 3 cm",2,"NO","Sí precoz","BCGI+MMCP","BCG inducción",833,0,0,0
+"9",57,"Hombre",66,"pTaBG","0a","No CIS","< 3 cm",1,"NO","No precoz","NO TTO","NO TTO",427,1,0,0
+"10",143,"Hombre",64,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",498,0,0,0
+"11",168,"Hombre",55,"pT1BG","I","No CIS","< 3 cm",1,"NO","Sí precoz","QHT+MMCP","QHT",217,0,0,0
+"12",61,"Hombre",59,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","BCG","BCG",2332,0,0,0
+"13",4,"Hombre",71,"pT1AG","I","No CIS",">3 cm",8,"SI","No precoz","BCG","BCG",529,1,1,1
+"14",19,"Mujer",72,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","EMDA/BCG","EMDA/BCG",359,0,0,0
+"15",28,"Hombre",70,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","BCG","BCG",504,1,0,0
+"16",121,"Hombre",70,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","NO TTO","NO TTO",505,1,0,0
+"17",172,"Hombre",71,"pTaBG","0a","No CIS","< 3 cm",2,"NO","No precoz","QHT","QHT",371,0,0,0
+"18",37,"Hombre",76,"pT1BG","I","No CIS",">3 cm",3,"NO","Sí precoz","MMC","MMC",219,1,0,1
+"19",20,"Hombre",71,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",825,1,0,1
+"20",51,"Hombre",67,"pTaBG","0a","No CIS",">3 cm",1,"NO","Sí precoz","MMC","MMC",1723,1,0,0
+"21",53,"Hombre",78,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",280,0,0,0
+"22",98,"Hombre",78,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","MMC","MMC",280,0,0,0
+"23",137,"Hombre",68,"pT1AG","I","No CIS",">3 cm",2,"NO","Sí precoz","BCGI+MMCP","BCG inducción",929,0,0,0
+"24",106,"Hombre",68,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",1324,1,0,0
+"25",40,"Hombre",58,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",462,0,0,0
+"26",9,"Hombre",60,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",516,1,0,0
+"27",79,"Hombre",65,"pT1AG","I","Sí CIS",">3 cm",5,"NO","Sí precoz","BCG+MMCP","BCG",202,0,0,0
+"28",125,"Hombre",80,"pTaBG","0a","No CIS","< 3 cm",2,"NO","Sí precoz","MMCP","MMCP",233,1,0,0
+"29",107,"Hombre",81,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","EMDA/BCG+MMCP","EMDA/BCG",408,0,0,0
+"30",140,"Hombre",86,"pTaBG","0a","No CIS","< 3 cm",1,"NO","No precoz","NO TTO","NO TTO",313,1,1,1
+"31",108,"Hombre",85,"pT1BG","I","No CIS","< 3 cm",15,"SI","Sí precoz","QHT+MMCP","QHT",254,0,0,0
+"32",162,"Hombre",83,"pTaAG","0a","No CIS",">3 cm",3,"NO","Sí precoz","QHT+MMCP","QHT",189,0,0,0
+"33",63,"Mujer",83,"pT1BG","I","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",677,0,0,0
+"34",92,"Hombre",76,"pT1AG","I","No CIS","< 3 cm",10,"SI","No precoz","BCG","BCG",746,0,0,0
+"35",160,"Hombre",78,"pT1AG","I","No CIS","< 3 cm",7,"NO","No precoz","BCG","BCG",180,1,0,0
+"36",163,"Hombre",80,"pT1AG","I","No CIS","< 3 cm",2,"NO","No precoz","QHT","QHT",266,0,0,0
+"37",169,"Hombre",74,"pT1BG","I","No CIS",">3 cm",3,"NO","No precoz","QHT","QHT",170,0,0,0
+"38",81,"Hombre",78,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","BCG","BCG",2813,0,0,0
+"39",49,"Hombre",79,"pTaAG","0a","Sí CIS","< 3 cm",1,"NO","Sí precoz","BCGI+MMCP","BCG inducción",840,0,0,0
+"40",136,"Hombre",78,"pT1AG","I","No CIS","< 3 cm",7,"NO","No precoz","BCG inducción","BCG inducción",169,1,0,0
+"41",109,"Hombre",76,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","QHT","QHT",205,0,0,0
+"42",71,"Hombre",71,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",1163,0,0,0
+"43",142,"Hombre",72,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","BCGI+MMCP","BCG inducción",1001,0,0,0
+"44",43,"Hombre",86,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","BCG","BCG",291,0,0,0
+"45",59,"Hombre",86,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","NO TTO","NO TTO",291,0,0,0
+"46",99,"Hombre",76,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",2129,1,0,0
+"47",123,"Hombre",79,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","BCG inducción","BCG inducción",880,1,1,1
+"48",5,"Hombre",74,"pT1AG","I","No CIS","< 3 cm",2,"NO","Sí precoz","BCG+MMCP","BCG",135,1,0,0
+"49",132,"Hombre",86,"pT1AG","I","No CIS",">3 cm",2,"NO","Sí precoz","BCG+MMCP","BCG",217,1,0,0
+"50",164,"Hombre",76,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","QHT","QHT",273,0,0,0
+"51",6,"Hombre",77,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","EMDA/BCG+MMCP","EMDA/BCG",856,0,0,0
+"52",69,"Hombre",77,"pT1BG","I","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",333,1,0,0
+"53",18,"Hombre",78,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",332,0,0,0
+"54",144,"Hombre",72,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",848,0,0,0
+"55",130,"Hombre",66,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","MMCP","MMCP",342,0,0,0
+"56",100,"Hombre",77,"pTaBG","0a","No CIS","< 3 cm",3,"NO","No precoz","QHT","QHT",350,0,0,0
+"57",170,"Hombre",77,"pTaBG","0a","No CIS","< 3 cm",3,"NO","No precoz","QHT","QHT",309,1,0,0
+"58",152,"Hombre",87,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","NO TTO","NO TTO",133,0,0,0
+"59",146,"Hombre",68,"pTaBG","0a","No CIS","< 3 cm",2,"NO","Sí precoz","MMCP","MMCP",1022,0,0,0
+"60",159,"Hombre",68,"pTaAG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",982,0,0,0
+"61",64,"Hombre",67,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",397,0,0,0
+"62",165,"Hombre",69,"pTaBG","0a","No CIS",">3 cm",8,"SI","No precoz","QHT","QHT",308,1,0,1
+"63",34,"Hombre",64,"pTaBG","0a","No CIS","< 3 cm",1,"NO","No precoz","MMC","MMC",475,1,0,0
+"64",11,"Mujer",68,"pTaAG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",503,0,0,0
+"65",70,"Mujer",61,"pTaBG","0a","No CIS","< 3 cm",1,"NO","No precoz","MMC","MMC",370,1,0,0
+"66",86,"Hombre",51,"pTaAG","0a","No CIS","< 3 cm",2,"NO","Sí precoz","MMC","MMC",5154,0,0,0
+"67",16,"Hombre",59,"pTaBG","0a","No CIS",">3 cm",1,"NO","Sí precoz","MMC","MMC",442,1,0,0
+"68",105,"Hombre",65,"pT1BG","I","No CIS",">3 cm",1,"NO","No precoz","QHT","QHT",183,1,0,0
+"69",35,"Hombre",62,"pT1AG","I","No CIS","< 3 cm",3,"NO","No precoz","BCG","BCG",755,1,1,1
+"70",87,"Hombre",63,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","BCG","BCG",965,0,0,0
+"71",15,"Hombre",75,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",491,0,0,0
+"72",110,"Hombre",88,"pTaAG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","QHT+MMCP","QHT",177,0,0,0
+"73",157,"Hombre",62,"pTaAG","0a","No CIS","< 3 cm",1,"NO","No precoz","BCG inducción","BCG inducción",944,0,0,0
+"74",111,"Hombre",72,"pT1AG","I","No CIS",">3 cm",4,"NO","No precoz","EMDA/BCG","EMDA/BCG",98,1,0,0
+"75",122,"Hombre",67,"pTaBG","0a","No CIS","< 3 cm",2,"NO","Sí precoz","MMCP","MMCP",968,0,0,0
+"76",2,"Hombre",60,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","EMDA+MMCP","EMDA",427,0,0,0
+"77",112,"Hombre",55,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","BCG","BCG",1849,1,0,0
+"78",151,"Hombre",79,"pT1AG","I","No CIS",">3 cm",3,"NO","No precoz","BCG","BCG",709,0,0,0
+"79",41,"Hombre",73,"pTaBG","0a","No CIS",">3 cm",1,"NO","Sí precoz","MMC","MMC",189,1,0,0
+"80",95,"Hombre",73,"pT1BG","I","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",175,1,0,0
+"81",175,"Hombre",74,"pTaBG","0a","No CIS",">3 cm",15,"SI","Sí precoz","EMDA/BCG+MMCP","EMDA/BCG",211,0,0,0
+"82",27,"Hombre",77,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","BCG","BCG",311,1,1,1
+"83",36,"Hombre",77,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","BCG inducción","BCG inducción",311,1,1,1
+"84",135,"Hombre",61,"pT1AG","I","No CIS","< 3 cm",4,"NO","Sí precoz","BCGI+MMCP","BCG inducción",247,1,1,1
+"85",113,"Hombre",70,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","BCG inducción","BCG inducción",90,1,0,0
+"86",176,"Hombre",71,"pT1AG","I","Sí CIS",">3 cm",3,"NO","No precoz","EMDA/BCG","EMDA/BCG",323,0,0,0
+"87",101,"Hombre",63,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","QHT+MMCP","QHT",221,0,0,0
+"88",103,"Hombre",63,"pTaBG","0a","No CIS","< 3 cm",1,"NO","No precoz","NO TTO","NO TTO",1996,1,0,0
+"89",68,"Hombre",67,"pT1AG","I","No CIS",">3 cm",10,"SI","Sí precoz","BCGI+MMCP","BCG inducción",664,0,0,0
+"90",114,"Hombre",68,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","QHT+MMCP","QHT",291,0,0,0
+"91",145,"Mujer",60,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","BCG","BCG",1497,0,0,0
+"92",31,"Hombre",55,"pT1AG","I","No CIS","< 3 cm",2,"NO","Sí precoz","MMC","MMC",427,1,0,0
+"93",128,"Mujer",55,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",1003,0,0,0
+"94",38,"Hombre",62,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","BCG","BCG",1393,1,1,1
+"95",93,"Mujer",65,"pTaAG","0a","No CIS",">3 cm",3,"NO","Sí precoz","QHT+MMCP","QHT",140,0,0,0
+"96",14,"Hombre",62,"pTaBG","0a","No CIS","< 3 cm",1,"NO","No precoz","MMC","MMC",589,1,0,0
+"97",115,"Hombre",87,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","EMDA/BCG","EMDA/BCG",314,0,0,0
+"98",52,"Hombre",61,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",372,1,0,0
+"99",22,"Hombre",67,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","EMDA+MMCP","EMDA",319,0,0,0
+"100",131,"Hombre",73,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",1091,0,0,0
+"101",44,"Hombre",70,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",1393,0,0,0
+"102",10,"Hombre",57,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","BCGI+MMCP","BCG inducción",132,1,0,0
+"103",129,"Hombre",59,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",1007,0,0,0
+"104",13,"Hombre",64,"pTaBG","0a","No CIS",">3 cm",1,"NO","Sí precoz","MMC","MMC",296,1,0,0
+"105",155,"Hombre",64,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","BCG","BCG",909,0,0,0
+"106",171,"Hombre",68,"pT1BG","I","No CIS","< 3 cm",1,"NO","Sí precoz","QHT+MMCP","QHT",144,0,0,0
+"107",23,"Hombre",69,"pTaBG","0a","No CIS","< 3 cm",3,"NO","Sí precoz","QHT+MMCP","QHT",426,0,0,0
+"108",147,"Hombre",56,"pTaBG","0a","No CIS",">3 cm",5,"NO","Sí precoz","MMCP","MMCP",179,1,0,0
+"109",116,"Hombre",60,"pTaAG","0a","No CIS",">3 cm",1,"NO","Sí precoz","QHT+MMCP","QHT",348,0,0,0
+"110",60,"Hombre",50,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","BCG","BCG",1786,0,0,0
+"111",65,"Hombre",64,"pT1AG","I","No CIS",">3 cm",3,"NO","No precoz","BCG","BCG",699,0,0,0
+"112",66,"Hombre",47,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",952,1,0,0
+"113",17,"Hombre",71,"pTaAG","0a","No CIS","< 3 cm",2,"NO","Sí precoz","MMC","MMC",624,0,0,0
+"114",7,"Mujer",54,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",405,0,0,0
+"115",42,"Hombre",55,"pTaBG","0a","No CIS",">3 cm",1,"NO","Sí precoz","MMCP","MMCP",777,0,0,0
+"116",33,"Hombre",62,"pTaBG","0a","No CIS","< 3 cm",10,"SI","Sí precoz","MMC","MMC",750,0,0,0
+"117",56,"Hombre",61,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",395,1,0,0
+"118",82,"Hombre",48,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",3035,0,0,0
+"119",54,"Hombre",46,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","EMDA+MMCP","EMDA",334,0,0,0
+"120",75,"Hombre",46,"pT1BG","I","No CIS",">3 cm",1,"NO","Sí precoz","MMC","MMC",1066,1,0,0
+"121",91,"Hombre",48,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",566,0,0,0
+"122",90,"Hombre",60,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","GEMCITP+MMCP","MMCP",158,0,0,0
+"123",117,"Hombre",42,"pT1BG","I","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",863,1,0,0
+"124",173,"Mujer",46,"pTaBG","0a","No CIS","< 3 cm",3,"NO","No precoz","QHT","QHT",408,0,0,0
+"125",80,"Hombre",63,"pT1AG","I","No CIS","< 3 cm",2,"NO","Sí precoz","BCG+MMCP","BCG",2636,0,0,0
+"126",73,"Hombre",67,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","EMDA/BCG+MMCP","EMDA/BCG",401,0,0,0
+"127",166,"Hombre",86,"pTaAG","0a","No CIS","< 3 cm",1,"NO","No precoz","QHT","QHT",35,0,0,0
+"128",26,"Mujer",76,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",231,1,0,0
+"129",174,"Mujer",79,"pTaBG","0a","No CIS","< 3 cm",2,"NO","No precoz","QHT","QHT",366,1,0,0
+"130",126,"Hombre",56,"pT1AG","I","No CIS",">3 cm",10,"SI","No precoz","NO TTO","NO TTO",1105,0,0,0
+"131",45,"Hombre",43,"pTaAG","0a","No CIS",">3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",292,0,0,0
+"132",153,"Mujer",85,"pT1AG","I","No CIS",">3 cm",2,"NO","No precoz","NO TTO","NO TTO",551,0,0,0
+"133",96,"Mujer",39,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",2710,1,0,0
+"134",39,"Mujer",68,"pTaAG","0a","No CIS","< 3 cm",4,"NO","Sí precoz","QHT+MMCP","QHT",377,0,0,0
+"135",12,"Mujer",66,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",511,0,0,0
+"136",58,"Hombre",67,"pT1AG","I","No CIS",">3 cm",2,"NO","Sí precoz","EMDA+MMCP","EMDA",217,0,0,0
+"137",67,"Hombre",69,"pTaAG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",271,0,0,0
+"138",118,"Hombre",64,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","BCG inducción","BCG inducción",872,0,0,0
+"139",77,"Hombre",50,"pTaAG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMC","MMC",1294,1,0,0
+"140",50,"Mujer",53,"pTaBG","0a","No CIS",">3 cm",2,"NO","Sí precoz","MMCP","MMCP",909,1,0,1
+"141",30,"Hombre",77,"pTaBG","0a","No CIS",">3 cm",1,"NO","Sí precoz","MMC","MMC",440,1,0,1
+"142",133,"Hombre",60,"pTaAG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",947,0,0,0
+"143",94,"Hombre",60,"pT1BG","I","No CIS","< 3 cm",10,"SI","Sí precoz","EMDA+MMCP","EMDA",231,1,0,0
+"144",102,"Hombre",61,"pTaBG","0a","No CIS",">3 cm",3,"NO","Sí precoz","EMDA+MMCP","EMDA",222,0,0,0
+"145",1,"Hombre",74,"pTaAG","0a","No CIS","< 3 cm",2,"NO","No precoz","BCG","BCG",516,0,0,0
+"146",29,"Hombre",74,"pT1AG","I","No CIS","< 3 cm",2,"NO","Sí precoz","BCG+MMCP","BCG",516,0,0,0
+"147",24,"Hombre",63,"pT1BG","I","No CIS","< 3 cm",1,"NO","No precoz","MMC","MMC",496,1,0,0
+"148",97,"Hombre",63,"pT1BG","I","No CIS","< 3 cm",1,"NO","No precoz","MMC","MMC",496,1,0,0
+"149",8,"Hombre",70,"pT1AG","I","No CIS","< 3 cm",2,"NO","No precoz","BCG","BCG",761,1,0,0
+"150",3,"Hombre",85,"pTaBG","0a","No CIS","< 3 cm",1,"NO","No precoz","MMC","MMC",376,0,0,0
+"151",55,"Hombre",61,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","EMDA/BCG+MMCP","EMDA/BCG",441,0,0,0
+"152",89,"Mujer",79,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",579,0,0,0
+"153",148,"Mujer",67,"pT1AG","I","No CIS",">3 cm",2,"NO","Sí precoz","BCG+MMCP","BCG",854,0,0,0
+"154",84,"Mujer",50,"pT1BG","I","No CIS",">3 cm",1,"NO","No precoz","EMDA","EMDA",272,0,0,0
+"155",149,"Hombre",61,"pTaBG","0a","No CIS",">3 cm",1,"NO","Sí precoz","MMCP","MMCP",819,0,0,0
+"156",85,"Hombre",68,"pT1AG","I","No CIS","< 3 cm",1,"NO","No precoz","MMC","MMC",2678,0,0,0
+"157",32,"Mujer",62,"pTaBG","0a","No CIS","< 3 cm",2,"NO","Sí precoz","MMC","MMC",567,1,0,0
+"158",47,"Hombre",56,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",553,1,1,1
+"159",74,"Mujer",50,"pT1BG","I","No CIS",">3 cm",1,"NO","No precoz","MMC","MMC",2640,0,0,0
+"160",167,"Hombre",82,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","QHT+MMCP","QHT",260,0,0,0
+"161",48,"Hombre",70,"pT1AG","I","No CIS",">3 cm",3,"NO","No precoz","BCG","BCG",508,1,0,0
+"162",25,"Hombre",74,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","BCG","BCG",272,1,0,0
+"163",88,"Hombre",89,"pT1AG","I","No CIS",">3 cm",2,"NO","No precoz","EMDA","EMDA",315,0,0,0
+"164",119,"Hombre",79,"pTaAG","0a","No CIS","< 3 cm",1,"NO","No precoz","QHT","QHT",303,0,0,0
+"165",150,"Hombre",72,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",736,1,0,1
+"166",46,"Mujer",74,"pTaAG","0a","No CIS",">3 cm",4,"NO","Sí precoz","EMDA+MMCP","EMDA",308,0,0,0
+"167",78,"Mujer",77,"pT1AG","I","No CIS","< 3 cm",10,"SI","Sí precoz","QHT+MMCP","QHT",156,0,0,0
+"168",120,"Hombre",74,"pTaBG","0a","No CIS","< 3 cm",3,"NO","Sí precoz","GEMCITP+MMCP","MMCP",264,0,0,0
+"169",21,"Hombre",75,"pT1AG","I","No CIS","< 3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",2409,0,0,0
+"170",138,"Mujer",57,"pT1BG","I","No CIS",">3 cm",1,"NO","No precoz","BCG","BCG",102,1,0,0
+"171",161,"Hombre",76,"pTaBG","0a","No CIS","< 3 cm",5,"NO","No precoz","MMC","MMC",591,1,0,0
+"172",134,"Hombre",77,"pT1AG","I","Sí CIS",">3 cm",1,"NO","Sí precoz","MMCP","MMCP",170,1,1,1
+"173",124,"Mujer",73,"pT1AG","I","No CIS",">3 cm",10,"SI","No precoz","NO TTO","NO TTO",284,1,0,0
+"174",141,"Hombre",62,"pT1AG","I","No CIS",">3 cm",1,"NO","Sí precoz","BCG+MMCP","BCG",976,0,0,0
+"175",139,"Hombre",90,"pT1AG","I","No CIS",">3 cm",1,"NO","No precoz","NO TTO","NO TTO",7,0,0,0
+"176",156,"Hombre",65,"pTaBG","0a","No CIS","< 3 cm",1,"NO","Sí precoz","MMCP","MMCP",104,0,0,0
